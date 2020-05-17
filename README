@@ -1,0 +1,24 @@
+This solution in the given files uses Professor Shaeffer's code to update the
+     combat, equip, destroy, unequip, drop, and inspect items. It also lets you 
+     look at any character in the dungeon. This includes the PC. He really 
+     loves himself for some reason, I don't know why. He could just stare at 
+     himself for hours.
+
+
+Data Structure- Added Equipment and Invenory slots. They are just arrays.
+
+Functions:
+	Added methods for all of the command prompts, they are: 
+	      io_inspect_character()
+	      io_inspect_item()
+	      io_drop_item()
+	      io_equip_item()
+	      io_display_equip()
+	      io_display_inventory()
+	In PC
+	   equip_item()- equips a given item with a given equip slot index which
+	   		 is found by: get_equip_slot()
+	In Object
+	   get_equip_slot()- finds the earliest equip slot (useful for anything
+	   		      but rings, but I handle that in the respective 
+			      io function
